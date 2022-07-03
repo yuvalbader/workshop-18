@@ -1,13 +1,12 @@
-FROM node:14.15.1-alpine
-COPY app.js .
-COPY package.json .
-RUN npm install &&\
-    apk update &&\
-    apk upgrade
-EXPOSE  8080
-CMD node app.js
+FROM node:14.15-alpine
 
+RUN mkdir /app
+WORKDIR /app
 
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+RUN npm install
 
+COPY . .
 
-
+CMD npm start

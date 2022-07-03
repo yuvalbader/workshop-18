@@ -1,17 +1,23 @@
 {
-  "name": "random-cat-facts-nodejs",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
+  "name": "academy-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/index.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "LiorRabin",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "request": "^2.88.2"
+    "express": "^4.18.1",
+    "pino": "^7.11.0"
   }
 }
