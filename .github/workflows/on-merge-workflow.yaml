@@ -1,37 +1,20 @@
+# Trigger on push to master (+ allow manual runs of this workflow)
+# First job: identical steps to PR workflow
+# Second job: Deploy to Heroku
+
 name: on-merge-workflow
 
 on:
-  push:
-    branches: [master]
-  workflow_dispatch:
+# [to be filled]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: # [to be filled]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Install Nodejs (puts node and npm in the PATH)
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - name: Install & Tests
-        run: |
-          npm install
-          npm test
+      - name: Install Node.js
+        # [rest to be filled]
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: # [to be filled]
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - name: Login to Heroku Container registry
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:login
-      - name: Build and push
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:push -a monday-academy-alex-test web
-      - name: Deploy
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:release -a monday-academy-alex-test web
+    # [rest to be filled]
