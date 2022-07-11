@@ -1,0 +1,20 @@
+# Trigger on push to master (+ allow manual runs of this workflow)
+# First job: identical steps to PR workflow
+# Second job: Deploy to Heroku
+
+name: merge-workflow
+
+on:
+  # [to be filled]
+jobs:
+  test:
+    runs-on: # [to be filled]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        # [rest to be filled]
+  build-deploy:
+    runs-on: # [to be filled]
+    steps:
+      # [rest to be filled]
