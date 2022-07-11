@@ -2,7 +2,7 @@
 # First job: identical steps to PR workflow
 # Second job: Deploy to Heroku
 
-name: merge-workflow
+name: on-merge-workflow
 
 on:
   # [to be filled]
