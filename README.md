@@ -1,5 +1,7 @@
 # Academy CI/CD workshop
 
+![68747470733a2f2f692e7974696d672e636f6d2f76692f365f7a464c7357377a32452f6d617872657364656661756c742e6a7067](https://user-images.githubusercontent.com/22532516/178478575-3952f817-1c59-4c61-8865-c2c7a8f6bceb.jpeg)
+
 Prerequisites:
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Open a [Heroku account](https://signup.heroku.com/)
