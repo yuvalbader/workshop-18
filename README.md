@@ -45,3 +45,8 @@ A quick Google search will reveal that there are multiple ways to deploy a Docke
 
 ### Accessing the app
 ![Screen Shot 2022-07-11 at 23 41 49](https://user-images.githubusercontent.com/22532516/178976864-95d7ce52-6f24-47b2-9085-6a227e97ba0a.png)
+
+### YAML from the presentation for reference
+<img width="1728" alt="Screen Shot 2022-07-14 at 22 44 55" src="https://user-images.githubusercontent.com/22532516/179070229-c48970be-09de-4b32-8886-bb325f34f6b1.png">
+
+
