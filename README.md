@@ -40,7 +40,7 @@ We suggest following security best practices and storing this token as an [encry
 You might want to combine this functionality with the fact that Heroku's CLI first looks for an [environment variable called HEROKU_API_KEY](https://devcenter.heroku.com/articles/authentication#api-token-storage).
 
 ### Deploying to Heroku
-A quick Google search will reveal that there are multiple ways to deploy a Dockerfile to Heroku. One straigthforward solution is to simply use the commands provided inside the *Container Registry* section, under the application's *Deploy* tab:
+A quick Google search will reveal that there are multiple ways of deploying a Dockerfile to Heroku. One straigthforward solution is to simply use the commands provided inside the *Container Registry* section, under the application's *Deploy* tab:
 ![Screen Shot 2022-07-11 at 23 40 09](https://user-images.githubusercontent.com/22532516/178976480-efa2d9e8-0249-4ea1-afe9-bb86aa38edc1.png)
 
 ### Accessing the app
