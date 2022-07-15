@@ -1,37 +1,21 @@
 name: on-merge-workflow
-
 on:
   push:
     branches: [master]
-  workflow_dispatch:
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: # [to be filled]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Install Nodejs (puts node and npm in the PATH)
-        uses: actions/setup-node@v3
-        with:
-          node-version: "14"
-      - name: Install & Tests
-        run: |
-          npm install
-          npm test
+      - name: Install Node.js
+        run: npm i && npm run test
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: # [to be filled]
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - name: Login to Heroku Container registry
-        env:
-          HEROKU_API_KEY: ${{34d500af-6f93-484e-a778-7dc8ed524a80 }}
-        run: heroku container:login
-      - name: Build and push
-        env:
-          HEROKU_API_KEY: ${{ 34d500af-6f93-484e-a778-7dc8ed524a80 }}
-        run: heroku container:push -a monday-academy-app web
-      - name: Deploy
-        env:
-          HEROKU_API_KEY: ${{ 34d500af-6f93-484e-a778-7dc8ed524a80}}
-        run: heroku container:release -a monday-academy-app web
+    - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 #
+        with:
+          heroku_api_key: ${{secrets.34d500af-6f93-484e-a778-7dc8ed524a80}}
+          heroku_app_name: "workshop-18-yb" #Must be unique in Heroku
+          heroku_email: "yuvalbader96@gmail.com"
