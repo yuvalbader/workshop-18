@@ -4,7 +4,7 @@
 name: pr-workflow
 
 on:
-pull_request:
+[pull_request]:
   branches: [master]
 jobs:
   test:
